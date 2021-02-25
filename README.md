@@ -1,7 +1,7 @@
 # Øvingsmenu
 
-Laget vårsemesteret 2021 av Morten Svendgård
-Egnet for å gjøre livet litt lettere under øvinger i C++
+Laget vårsemesteret 2021 av Morten Svendgård.
+Egnet for å gjøre livet litt lettere under øvinger i C++.
 
 -----------------
 
@@ -26,5 +26,6 @@ int main() {
 
     // Kjor menyen til bruker avslutter
     while(menu.runMenu());
+    
 }
 ```
