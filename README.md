@@ -10,7 +10,7 @@ Eksempel på bruk:
 #include <iostream>
 #include "netrom.h"
 
-'''C++
+```cpp
 // Eksempelfunksjon
 void hello() {
     std::cout << "Hello World" << std::endl;
@@ -28,4 +28,4 @@ int main() {
     // Kjor menyen til bruker avslutter
     while(menu.runMenu());
 }
-'''
+```
