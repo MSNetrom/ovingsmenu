@@ -1,4 +1,4 @@
-# Øvingsmenu
+# Øvingsmeny
 
 Laget vårsemesteret 2021 av Morten Svendgård.
 Egnet for å gjøre livet litt lettere under øvinger i C++.
