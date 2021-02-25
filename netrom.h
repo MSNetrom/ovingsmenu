@@ -3,6 +3,8 @@
 /*
     Laget vårsemesteret 2021 av Morten Svendgård
     Egnet for å gjøre livet litt lettere under øvinger i C++
+    
+    URL: https://github.com/MSNetrom/ovingsmenu
 
     -----------------
 
