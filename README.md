@@ -6,11 +6,10 @@ Egnet for å gjøre livet litt lettere under øvinger i C++
 -----------------
 
 Eksempel på bruk:
-
+```cpp
 #include <iostream>
 #include "netrom.h"
 
-```cpp
 // Eksempelfunksjon
 void hello() {
     std::cout << "Hello World" << std::endl;
