@@ -41,7 +41,7 @@ namespace netrom{
     void my_window_open();
 
     //Et valg i menyen
-    struct MenuChoise{
+    struct MenuChoice{
         void (*executer)();
         std::string description = "";
     };
@@ -50,12 +50,12 @@ namespace netrom{
     class Menu{
     private:
         std::string heading;
-        std::vector<MenuChoise> choices;
+        std::vector<MenuChoice> choices;
     public:
         //Constructor with optinioal heading
         Menu(std::string heading);
 
-        //Add menu choise
+        //Add menu choice
         void addChoice(void (*executer)(), std::string description);
         //Add new line with info
         void addInfo(std::string info);

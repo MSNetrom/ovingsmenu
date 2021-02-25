@@ -49,7 +49,7 @@ namespace netrom{
     //Meny funksjoner
 
     void Menu::addChoice(void (*executer)(), std::string description){
-        choices.push_back(MenuChoise{executer, description});
+        choices.push_back(MenuChoice{executer, description});
     }
 
     void Menu::addInfo(std::string info){
@@ -68,17 +68,17 @@ namespace netrom{
         }
         std::cout << std::endl << "Angi valg (0 - " << choices.size() << "): ";
 
-        //Get choise
-        unsigned int choise = -1; // -1 gir maks verdi på unsigned int?
-        std::cin >> choise;
+        //Get choice
+        unsigned int choice = -1; // -1 gir maks verdi på unsigned int?
+        std::cin >> choice;
         std::cout << std::endl;
 
-        //Check if valid choise or not
-        if (choise >= 0 && choise <= choices.size()){
-            if (choise == 0) return false; // Vi vil avslutte
+        //Check if valid choice or not
+        if (choice >= 0 && choice <= choices.size()){
+            if (choice == 0) return false; // Vi vil avslutte
             else {
                 std::cin.ignore(); //Unngå problemer med input
-                choices[choise-1].executer(); //Kjører kode
+                choices[choice-1].executer(); //Kjører kode
             }
         } else {
             std::cout << "Ikke et gyldig valg. Prov pa nytt" << std::endl;
